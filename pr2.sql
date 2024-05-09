@@ -24,11 +24,11 @@ select * from grades;
 
 -- select max(avg_grade) from grades;
 
--- select city, count(city)
+-- select city, count(*)
 -- from grades
 -- group by city;
 
--- select country, count(country)
+-- select country, count(*)
 -- from grades
 -- group by country;
 
@@ -42,10 +42,17 @@ select * from grades;
 -- where max_subject = 'Математика'
 -- group by max_subject;
 
--- select group_name, count(full_name)
+-- select group_name, count(*)
 -- from grades
 -- group by group_name;
 
-select group_name, avg(avg_grade)
+select group_name, avg(avg_grade) as average_grade
 from grades
-group by group_name;
+group by group_name
+having count(*) >= 2;
+
+select group_name, avg(avg_grade) as average_grade
+from grades
+where average_grade between 70 and 80
+-- group by group_name
+-- having count(*) >= 2;
