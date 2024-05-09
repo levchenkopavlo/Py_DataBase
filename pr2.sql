@@ -46,10 +46,10 @@ select * from grades;
 -- from grades
 -- group by group_name;
 
-select group_name, avg(avg_grade) as average_grade
-from grades
-group by group_name
-having count(*) >= 2;
+-- select group_name, avg(avg_grade) as average_grade
+-- from grades
+-- group by group_name
+-- having count(*) >= 2;
 
 select group_name, avg(avg_grade) as average_grade
 from grades
