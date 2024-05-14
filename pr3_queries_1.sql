@@ -71,4 +71,18 @@ where building in (1, 3);
 -- Вивести прізвища лікарів, що починаються з літери «N»
 select surname
 from doctors
-where surname like 'М%'
+where surname like 'М%';
+
+-- виведіть імена лікарів які отримають найбільшу зарплату
+select name
+from Doctors
+where Salary = (select max(Salary) from Doctors);
+
+
+with MaxSalary as (
+    select max(Salary) as MaxSalary
+    from Doctors
+)
+select name
+from Doctors, MaxSalary
+where Doctors.Salary = MaxSalary.MaxSalary;
