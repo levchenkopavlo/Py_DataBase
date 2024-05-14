@@ -8,14 +8,14 @@
 --     Name VARCHAR(100) NOT NULL UNIQUE
 -- );
 
--- INSERT INTO Departments (Building, Financing, Name) VALUES (1, 5000, 'Терапевтичний відділ');
--- INSERT INTO Departments (Building, Financing, Name) VALUES (2, 7000, 'Хірургічний відділ');
--- INSERT INTO Departments (Building, Financing, Name) VALUES (3, 6000, 'Педіатричний відділ');
--- INSERT INTO Departments (Building, Financing, Name) VALUES (4, 4000, 'Лабораторія діагностики');
--- INSERT INTO Departments (Building, Financing, Name) VALUES (1, 5500, 'Ортопедичний відділ');
--- INSERT INTO Departments (Building, Financing, Name) VALUES (2, 8000, 'Реанімаційний відділ');
--- INSERT INTO Departments (Building, Financing, Name) VALUES (3, 6300, 'Гінекологічний відділ');
--- INSERT INTO Departments (Building, Financing, Name) VALUES (5, 7000, 'Онкологічний відділ');
+-- INSERT INTO Departments (Building, Financing, Name) VALUES (1, 11000, 'Терапевтичний відділ');
+-- INSERT INTO Departments (Building, Financing, Name) VALUES (2, 28000, 'Хірургічний відділ');
+-- INSERT INTO Departments (Building, Financing, Name) VALUES (3, 24000, 'Педіатричний відділ');
+-- INSERT INTO Departments (Building, Financing, Name) VALUES (4, 16000, 'Лабораторія діагностики');
+-- INSERT INTO Departments (Building, Financing, Name) VALUES (1, 14000, 'Ортопедичний відділ');
+-- INSERT INTO Departments (Building, Financing, Name) VALUES (2, 32000, 'Реанімаційний відділ');
+-- INSERT INTO Departments (Building, Financing, Name) VALUES (3, 17200, 'Гінекологічний відділ');
+-- INSERT INTO Departments (Building, Financing, Name) VALUES (5, 28000, 'Онкологічний відділ');
 
 -- CREATE TABLE Diseases (
 --     Id SERIAL PRIMARY KEY,
