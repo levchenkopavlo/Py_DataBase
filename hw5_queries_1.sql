@@ -12,9 +12,13 @@ WHERE TEACHERID = (
 -- 3. Виведіть кількість занять, які проводяться в аудиторії «D201».
 -- 4. Виведіть назви аудиторій та кількість лекцій, які проводяться в них.
 -- 5. Виведіть кількість студентів, які відвідують лекції викладача «Jack Underhill».
-SELECT ID, NAME, SURNAME
+SELECT STUDENTS.ID, NAME, SURNAME, GROUPID
 FROM STUDENTS
-WHERE 
+JOIN GROUPSSTUDENTS ON STUDENTS.ID = STUDENTID
+WHERE GROUPSSTUDENTS.GROUPID = 
+
+
+
 -- 6. Виведіть середню ставку викладачів факультету «Computer Science».
 -- 7. Виведіть мінімальну та максимальну кількість студентів серед усіх груп.
 -- 8. Виведіть середній фонд фінансування кафедр.
