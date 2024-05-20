@@ -71,8 +71,9 @@
 --     Id SERIAL PRIMARY KEY,
 --     EndDate DATE NOT NULL CHECK (EndDate > StartDate),
 --     StartDate DATE NOT NULL,
---     DoctorId INT NOT NULL,
---     FOREIGN KEY (DoctorId) REFERENCES Doctors(Id)
+--     DoctorId INT 
+-- -- 	NOT NULL,
+-- --     FOREIGN KEY (DoctorId) REFERENCES Doctors(Id)
 -- );
 
 -- INSERT INTO Vacations (StartDate, EndDate, DoctorId)
@@ -84,6 +85,9 @@
 --     ('2024-10-10', '2024-10-20', 9),
 --     ('2024-11-25', '2024-12-05', 11),
 --     ('2024-12-20', '2025-01-05', 13);
+	
+-- ALTER TABLE Vacations
+-- ADD CONSTRAINT fk_DoctorId FOREIGN KEY (DoctorId) REFERENCES doctors(Id);
 
 -- CREATE TABLE Donations (
 --     Id SERIAL PRIMARY KEY,
@@ -119,6 +123,7 @@
 -- select * from sponsors;
 -- select * from DoctorsSpecializations;
 -- select * from Vacations;
--- select * from Donations;
+SELECT * FROM public.donations
+ORDER BY id ASC 
 -- select * from Wards;
 
