@@ -12,10 +12,11 @@ WHERE TEACHERID = (
 -- 3. Виведіть кількість занять, які проводяться в аудиторії «D201».
 -- 4. Виведіть назви аудиторій та кількість лекцій, які проводяться в них.
 -- 5. Виведіть кількість студентів, які відвідують лекції викладача «Jack Underhill».
-SELECT STUDENTS.ID, NAME, SURNAME, GROUPID
-FROM STUDENTS
-JOIN GROUPSSTUDENTS ON STUDENTS.ID = STUDENTID
-WHERE GROUPSSTUDENTS.GROUPID = 
+
+-- SELECT STUDENTS.ID, NAME, SURNAME, GROUPID
+-- FROM STUDENTS
+-- JOIN GROUPSSTUDENTS ON STUDENTS.ID = STUDENTID
+-- WHERE GROUPSSTUDENTS.GROUPID = 
 
 
 
